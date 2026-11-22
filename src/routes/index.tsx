@@ -21,6 +21,7 @@ import {
   Server,
   Sparkles,
   Terminal,
+  UserRound,
   Wrench,
   type LucideIcon,
 } from "lucide-react";
@@ -330,18 +331,30 @@ function PortfolioPage() {
                   <span className="font-mono text-[10px] text-muted-foreground">01 / 04</span>
                 </div>
 
-                <div className="grid grid-cols-[2.5rem_1fr] gap-x-3 px-4 py-6 font-mono text-xs leading-8 sm:px-6 sm:py-8 sm:text-sm">
-                  <div className="select-none text-right text-muted-foreground/60" aria-hidden="true">
-                    01<br />02<br />03<br />04<br />05<br />06<br />07
+                <div className="grid grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] items-stretch gap-3 p-3 sm:gap-4 sm:p-4">
+                  <div
+                    role="img"
+                    aria-label="Portrait placeholder for Sujith Singanaboina"
+                    className="flex min-w-0 w-full aspect-[4/5] self-center flex-col items-center justify-center rounded-sm border border-electric/30 bg-card/80 px-2 text-center"
+                  >
+                    <UserRound aria-hidden="true" className="size-7 text-electric/80 sm:size-9" strokeWidth={1.4} />
+                    <span className="mt-2 font-display text-xl font-semibold text-foreground sm:text-2xl">SY</span>
+                    <span className="mt-1 font-mono text-[9px] text-muted-foreground">PORTRAIT</span>
                   </div>
-                  <div className="min-w-0 overflow-hidden">
-                    <p><span className="code-keyword">const</span> <span className="code-variable">sujith</span> = {'{'}</p>
-                    <p className="pl-4"><span className="code-key">focus</span>: <span className="code-string">“Full Stack Developer”</span>,</p>
-                    <p className="pl-4"><span className="code-key">degree</span>: <span className="code-string">“Computer Science”</span>,</p>
-                    <p className="pl-4"><span className="code-key">interests</span>: [</p>
-                    <p className="pl-8"><span className="code-string">“AI / ML”</span>, <span className="code-string">“Problem Solving”</span></p>
-                    <p className="pl-4">],</p>
-                    <p>{'}'}<span className="text-electric">;</span></p>
+
+                  <div className="grid min-w-0 grid-cols-[1.5rem_minmax(0,1fr)] gap-x-2 self-center font-mono text-[10px] leading-7 sm:grid-cols-[2rem_minmax(0,1fr)] sm:gap-x-3 sm:text-xs sm:leading-8">
+                    <div className="select-none text-right text-muted-foreground/60" aria-hidden="true">
+                      01<br />02<br />03<br />04<br />05<br />06<br />07
+                    </div>
+                    <div className="min-w-0 overflow-hidden">
+                      <p><span className="code-keyword">const</span> <span className="code-variable">sujith</span> = {'{'}</p>
+                      <p className="pl-2 sm:pl-4"><span className="code-key">focus</span>: <span className="code-string">“Full Stack Developer”</span>,</p>
+                      <p className="pl-2 sm:pl-4"><span className="code-key">degree</span>: <span className="code-string">“Computer Science”</span>,</p>
+                      <p className="pl-2 sm:pl-4"><span className="code-key">interests</span>: [</p>
+                      <p className="pl-4 sm:pl-8"><span className="code-string">“AI / ML”</span>, <span className="code-string">“Problem Solving”</span></p>
+                      <p className="pl-2 sm:pl-4">],</p>
+                      <p>{'}'}<span className="text-electric">;</span></p>
+                    </div>
                   </div>
                 </div>
 
